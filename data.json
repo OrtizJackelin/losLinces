@@ -6,7 +6,7 @@
     "ubicacion": "Palermo",
     "date": "25/05/2023",
     "hour": "08:00",
-    "distancias": [{"distancia": 10,"costo": 4800},{"distancia": 3,"costo": 5500}],
+    "distancias": [{"distancia": 10,"costo": 4800},{"distancia": 3,"costo": 4000}],
     "url": "./Imagenes eventos Carreras/CarreraMaya.jpg",
     "inscripcion_habilitada": false,
     "evento_finalizado" : true
@@ -42,7 +42,7 @@
     "ubicacion": "Alfonsin y Laprida, Vicente Lopez",
     "date": "17/06/2023",
     "hour": "17:00",
-    "distancias":[{ "distancia":10,"costo":4500},{"distancia":3, "costo":4500}],
+    "distancias":[{ "distancia":10,"costo":4500},{"distancia":3, "costo":6500}],
     "url": "./Imagenes eventos Carreras/Rexona.jpg",
     "inscripcion_habilitada": true,
     "evento_finalizado" : false
