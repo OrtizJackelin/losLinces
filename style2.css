@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+/* html{
+    scroll-behavior: smooth;
+} */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+
+}
+/* NAVBAR */
+
+.navbar-nav a{
+    color: white;
+}
+.navbar-brand img{
+    padding: 12px;
+}
+/* BOTON EVENTOS */
+.card-body btn{
+    background-color:linear-gradient(rgb(165, 4, 4), rgb(78, 6, 6),rgb(32, 1, 1));
+}
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: gray;
+    height: 70px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer p {
+    margin: 0;
+    padding: 2%;
+    color: antiquewhite;
+}
+
+.redesFooter {
+    padding: 12px 12px;
+}
+/* ADAPTACION PARA PANTALLAS */
+@media screen and (width>720px) {
+    /* FOOTER */
+    .footer {
+        height: 150px;
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+    }
+    .footer p {
+        margin: 5px;
+        padding: 8px;
+    }
+    
+
+}
