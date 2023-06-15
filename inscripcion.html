@@ -18,48 +18,55 @@
 
 <body>
     <header>
-        <nav style= "background-color:  rgba(0, 0, 0, .95);" 
-        class=" navbar navbar-expand-lg navbar-dark sticky-top" >
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html"> 
-                <img src="Vector Ink Export.svg" alt="" width="100" height="auto"
-                class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon">
-              </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">     
-                    <li class="nav-item"><a class="nav-link" href="index.html#escuelas" style="color: white;" >ESCUELAS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#eventos" style="color: white;">EVENTOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#nosotros" style="color: white;">NOSOTROS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#encontranos" style="color: white;" >CONTACTO</a></li>
-                    <li class="nav-item"><a  href="https://api.whatsapp.com/send?phone=1126939176"><img src="redes/whatsapp.svg" alt="whatsapp" style="margin-right: 10px;"></a>
-                        <a  href="https://www.instagram.com/loslincesatletismo/"><img src="redes/instagram.svg" alt="instagram" style="margin-right: 10px;"></a>
-                        <a  href="https://www.facebook.com/LOSLINCESRUNNINGTEAM"><img src="redes/facebook.svg" alt="facebook" style="margin-right: 60px;"></a>
-                    </li>
+        <nav style="background-color:  rgba(0, 0, 0, .95);" class=" navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="imagenesIndex/Vector Ink Export.svg" alt="logo" width="100" height="auto"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" class=" navbar navbar-expand-lg navbar-dark sticky-top">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html#escuelas"
+                                style="color: white;">ESCUELAS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#eventos"
+                                style="color: white;">EVENTOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#nosotros"
+                                style="color: white;">NOSOTROS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#encontranos"
+                                style="color: white;">CONTACTO</a></li>
+                        <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=1126939176"><img
+                                    src="redes/whatsapp.svg" alt="whatsapp" style="margin-right: 10px;"></a>
+                            <a href="https://www.instagram.com/loslincesatletismo/"><img src="redes/instagram.svg"
+                                    alt="instagram" style="margin-right: 10px;"></a>
+                            <a href="https://www.facebook.com/LOSLINCESRUNNINGTEAM"><img src="redes/facebook.svg"
+                                    alt="facebook" style="margin-right: 60px;"></a>
+                        </li>
+                </div>
             </div>
-          </div>
         </nav>
-      </header>
+    </header>
     <!--FORMULARIO DE INSCRIPCION A LAS ESCUELAS-->
     <article>
         <section id="inscripcionNiños">
             <div class="container"><br>
-                <form  id="formulario" method="post" action="mailto:clau.jack.uni@gmail.com">
+                <form id="formulario" method="post" action="mailto:clau.jack.uni@gmail.com">
                     <h3 id="titulo"></h3><br>
                     <div class="row">
                         <div class="col">
                             <label for="inputName" class="form-label">Nombre</label>
-                            <input type="text" id="inputName" class="form-control" placeholder="Nombre" aria-label="Nombre" 
-                                pattern="[A-Za-z]{2,9}" required>
+                            <input type="text" id="inputName" class="form-control" placeholder="Nombre"
+                                aria-label="Nombre" pattern="[A-Za-z]{2,9}" required>
                         </div>
                         <div class="col">
                             <label for="inputApellido" class="form-label">Apellido</label>
-                            <input type="text" id="inputApellido" class="form-control" placeholder="Apellido" aria-label="Apellido" 
-                                pattern="[A-Za-z]{2,9}" required>
+                            <input type="text" id="inputApellido" class="form-control" placeholder="Apellido"
+                                aria-label="Apellido" pattern="[A-Za-z]{2,9}" required>
                         </div>
                     </div><br>
 
@@ -67,35 +74,37 @@
 
                         <div class="col">
                             <label for="inputEdad" class="form-label">Edad</label>
-                            <input type="number" id="inputEdad" class="form-control" placeholder="Edad" aria-label="Edad" 
-                                min="5" max="90" required>
+                            <input type="number" id="inputEdad" class="form-control" placeholder="Edad"
+                                aria-label="Edad" min="5" max="90" required>
                         </div>
 
                         <div class="col">
-                            <label for="inputDni" class="form-label">Dni</label>
-                            <input type="number" id="inputDni" class="form-control" placeholder="DNI" aria-label="DNI" min="10000000"
-                                max="99999999" required>
+                            <label for="inputDni" class="form-label">DNI</label>
+                            <input type="number" id="inputDni" class="form-control" placeholder="DNI" aria-label="DNI"
+                                min="10000000" max="99999999" required>
                         </div>
 
                         <div class="col">
                             <label for="inputTelefono" class="form-label">Tel&eacute;fono</label>
-                            <input type="number"id="inputTelefono" class="form-control" placeholder="Telefono"
+                            <input type="number" id="inputTelefono" class="form-control" placeholder="Telefono"
                                 aria-label="Telefono de contacto" min="1000000000" max="9999999999" required>
                         </div>
 
                     </div><br>
 
                     <div class="col">
-                        <label for="inputAlgunaEnfermedad" class="form-label">Indique si posee alguna enfermedad o alergias</label>
-                        <input class="form-control" id="inputAlgunaEnfermedad" type="text" 
-                            placeholder="Indique si posee alguna enfermedad o alergias" aria-label="default input example" 
-                            pattern="^[a-zA-Z0-9 \s]+$">
+                        <label for="inputAlgunaEnfermedad" class="form-label">Indique si posee alguna enfermedad o
+                            alergias</label>
+                        <input class="form-control" id="inputAlgunaEnfermedad" type="text"
+                            placeholder="Indique si posee alguna enfermedad o alergias"
+                            aria-label="default input example" pattern="^[a-zA-Z0-9 \s]+$">
                     </div><br>
 
                     <div class="row">
 
                         <div class="col-md-4">
-                            <label for="actividadFisica" class="form-label">¿Realiza actividad fisica actualmente?</label>
+                            <label for="actividadFisica" class="form-label">¿Realiza actividad f&iacute;sica
+                                actualmente?</label>
                             <select id="inputActividadFisica" class="form-select" required>
                                 <option selected>Seleccionar</option>
                                 <option>Si</option>
@@ -104,25 +113,26 @@
                         </div>
 
                         <div class="col-md-4">
-                            <label for="inputCertificadoSalud" class="form-label">Si posee certificado de buena salud puede
-                                cargarlo aqui</label>
-                            <input class="form-control" id="inputCertificadoSalud" type="file" id="formFile" required>
+                            <label for="inputCertificadoSalud" class="form-label">Si posee certificado de buena salud
+                                puede
+                                cargarlo aqu&iacute;</label>
+                            <input class="form-control" id="inputCertificadoSalud" type="file" id="formFile">
                         </div>
 
                     </div><br><br>
 
-                    <h3>Contacto de emergencia</h3>
+                    <h3>Contacto de emergencia/Tutor legal</h3>
                     <div class="row">
 
                         <div class="col">
                             <label for="inputNombreContacto" class="form-label">Nombre</label>
-                            <input type="text" id="inputNombreContacto" class="form-control" placeholder="Nombre" 
+                            <input type="text" id="inputNombreContacto" class="form-control" placeholder="Nombre"
                                 aria-label="Nombre" pattern="[A-Za-z]{2,9}" required>
                         </div>
 
                         <div class="col">
                             <label for="inputApellidoContacto" class="form-label">Apellido</label>
-                            <input type="text" id="inputApellidoContacto" class="form-control" placeholder="Apellido" 
+                            <input type="text" id="inputApellidoContacto" class="form-control" placeholder="Apellido"
                                 aria-label="Apellido" pattern="[A-Za-z]{2,9}" required>
                         </div>
 
@@ -136,7 +146,7 @@
                     <hr>
                     <div class="row">
                         <div class="col-12">
-                            <button type="button" class="btn btn-secondary"  id="btn_submit_form_evento">Enviar</button>
+                            <button type="button" class="btn btn-secondary" id="btn_submit_form_evento">ENVIAR</button>
                         </div>
                     </div>
                 </form>
@@ -144,7 +154,7 @@
         </section>
     </article>
 
-     <!---Ventana Bootstrap Modal-->
+    <!---Ventana Bootstrap Modal-->
     <section id="preinscripcion">
         <div class="modal fade" id="preinscripcion_modal" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -152,12 +162,12 @@
                 <div class="modal-content">
                     <div id="pre_inscripcion_imprimible">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Pre Inscripción</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Pre Inscripci&oacute;n</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body" id="preinscripcion">
-                            <p>Se ha recibido exitosamente su solicitud de inscripción</p>
-                            <p><b >Esculea De Atletismo Los Linces</b></p>
+                            <p>Se ha recibido exitosamente su solicitud de inscripci&oacute;n</p>
+                            <p><b>Escuela De Atletismo Los Linces</b></p>
                             <p id="pi_titulo"></p>
                             <p id="pi_inputName"></p>
                             <p id="pi_inputDni"></p>
@@ -166,30 +176,38 @@
                             <p id="pi_inputNombreContacto"></p>
                             <p id="pi_inputTelefonoContacto"></p>
                             <hr />
-                            <p>Para finalizar su inscripción deberá:</p>
+                            <p>Para finalizar su inscripci&oacute;n deber&aacute;:</p>
                             <ul>
-                                <li>Imprimir &eacute;sta solicitud y acercarse hasta uno de nuestros puntos de encuentro
-                                    con la misma.
-                                    <b>Para m&aacute;s infromaci&oacute;n puede contactarnos por preinscripciones@loslinces.com</b> 
+                                <li>Imprimir &eacute;sta solicitud y adjuntar el acto m&eacute;dico, y con los mismo acercarse 
+                                    hasta uno de nuestros puntos de encuentro.
+                                    <b>Para m&aacute;s infromaci&oacute;n puede contactarnos por
+                                        preinscripciones@loslinces.com</b>
                                     o mendiate un mensaje de Whastapp <a
-                                    href="https://api.whatsapp.com/send?phone=1126939176" target="_blank"><i class="bi bi-whatsapp "></iclass></i></a>
+                                        href="https://api.whatsapp.com/send?phone=1126939176" target="_blank"><i
+                                            class="bi bi-whatsapp "></iclass></i></a>
                                 </li>
                             </ul>
-                            <p> <b>Importante: </b>El acto m&eacute;dico debe estar actualizado, sellado y firmado por el m&eacute;dico<p>
-                              
+                            <p> <b>Importante: </b>El acto m&eacute;dico debe estar actualizado, sellado y firmado por
+                                el m&eacute;dico
+                            <p>
+
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" id="btn_imprimir_preinscripcion">Imprimir</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" 
+                            id="btn_descargar_cerrar">CERRAR</button>
+
+                        <button type="button" class="btn btn-primary" 
+                            id="btn_imprimir_preinscripcion">IMPRIMIR</button>
+
                         <button type="button" class="btn btn-primary"
-                            id="btn_descargar_preinscripcion">Descargar</button>
+                            id="btn_descargar_preinscripcion">DESCARGAR</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </div><br><br>
     </section>
-    
+
     <!--FOOTER-->
     <footer class="footer">
         <p>&copy; Los Linces 2023</p>

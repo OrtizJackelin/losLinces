@@ -18,6 +18,7 @@ function getIdFromQueryString(){
 document.addEventListener("DOMContentLoaded", () => {
 
     idEscuela = getIdFromQueryString();
+
     if (!idEscuela) {
         redireccionar("No se especificó ninguna escuela.");
     } 
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }else{
         redireccionar("Escuela no valida.");
     }
+
     const inputs = document.querySelectorAll("input");
     inputs.forEach(
         function(myinput){
@@ -48,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Preinscripciones
 function generarPreinscripcion(event){
+
     var formulario= document.querySelector("#formulario")
     
     if (formulario.checkValidity()){
@@ -68,14 +71,18 @@ function generarPreinscripcion(event){
         const myModal2 = new bootstrap.Modal('#preinscripcion_modal', {
             keyboard: false
         })
+
         myModal2.show();
         formulario.submit();
+
     }else{
+
         formulario.reportValidity();
     }
 }
 
 function imprimirPreinscripcion() {
+
     var contenidoDiv = document.getElementById("pre_inscripcion_imprimible").innerHTML;
     var ventanaImpresion = window.open('', '_blank', 'width=500,height=500');
 
@@ -85,7 +92,9 @@ function imprimirPreinscripcion() {
     ventanaImpresion.document.close();
     ventanaImpresion.print();
 }
+
 function descargarPreinscripcion(){
+
     var doc = new jsPDF();
     var elementHTML = document.querySelector("#pre_inscripcion_imprimible");
     doc.fromHTML(elementHTML, 15, 15, {'width': 170});
@@ -94,11 +103,12 @@ function descargarPreinscripcion(){
 
 
 function validarInputs(event){
+
     if(event.target.checkValidity()){
-        event.target.classList.remove("novalido");
+        
         event.target.style.borderColor="#ced4da";
     }else{
-        event.target.classList.add("novalido");
+      
         event.target.style.borderColor="crimson";
     }
     

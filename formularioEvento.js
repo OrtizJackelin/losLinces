@@ -199,15 +199,17 @@ function llenarComboCategoria(){
 
 //el input del evento
 function validarInputs(event){
+
     var resultado=event.target.checkValidity();
+
     if(event.target.id==='inputEmail4'){
         resultado= validarEmail(event.target.value);
     }
     if(resultado){
-        event.target.classList.remove("novalido");
+      
         event.target.style.borderColor="#ced4da";
     }else{
-        event.target.classList.add("novalido");
+      
         event.target.style.borderColor="crimson";
     }
 
@@ -216,7 +218,7 @@ function validarInputs(event){
 
 function validarEmail(email){
 
-    var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,3})$/;
     return regex.test(email) ? true : false;
     
 }

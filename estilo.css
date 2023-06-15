@@ -13,7 +13,7 @@
     color: white; /* Cambia #ff0000 por el color que desees utilizar */
   }
 
-  #botonFiltro, #a_inscribirme{
+  #botonFiltro, #a_inscribirme, #btn_submit_form_evento,#btn_imprimir_preinscripcion,#btn_descargar_preinscripcion,#btn_descargar_cerrar{
     color: white;
     background:linear-gradient(rgb(165, 4, 4), rgb(78, 6, 6),rgb(32, 1, 1));
   }

@@ -3,16 +3,21 @@ const templateCard = document.querySelector("#template-card").content;
 var listaEventos;
 
 document.addEventListener("DOMContentLoaded", () => {
+
     fetchData();
+
     document.querySelector("#inputFiltroDistancia").addEventListener("change", aplicarFiltros);
     document.querySelector("#inputFiltroCiudad").addEventListener("change", aplicarFiltros);
     document.querySelector("#botonFiltro").addEventListener("click", function(){
 
         const estadoBoton=document.querySelector("#botonFiltro");
+
         if(estadoBoton.innerText==='Mostar Filtros'){
+
             estadoBoton.innerText="Ocultar Filtros"
         }
         else{
+
             estadoBoton.innerText="Mostar Filtros"
         }
 
@@ -22,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 const fetchData = async () => {
+
     fetch('https://ortizjackelin.github.io/data.json')
         .then((res) => res.json())
         .then((res) => {
@@ -48,6 +54,7 @@ const mostrarSpinner = (estado) => {
 };
 
 const pintarDatos = (data) => {
+
     const fragment = document.createDocumentFragment();
 
     //Para llenar el select del filtro de ciudades distancias
@@ -65,8 +72,10 @@ const pintarDatos = (data) => {
         clone.querySelector("#p_largada_evento").textContent = "Largada: " + evento.ubicacion.substring(0, 40);
 
         evento.distancias.forEach((item) => {
+
             distancia = distancia + item.distancia + "K ";
         });
+        
         clone.querySelector("#p_distancia_evento").textContent = "distancia: " + distancia;
 
         clone.querySelector("#img_evento").setAttribute("src", evento.url);
