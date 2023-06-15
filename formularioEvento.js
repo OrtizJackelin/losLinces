@@ -1,7 +1,7 @@
 
 const fetchData = async () => {
    
-    fetch('http://127.0.0.1:5500/data.json')
+    fetch('https://ortizjackelin.github.io/data.json')
     .then ((datos)=>datos.json())
     .then ((datos)=> {
         try {
