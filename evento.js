@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 const fetchData = async () => {
-    fetch('http://127.0.0.1:5501/data.json')
+    fetch('https://ortizjackelin.github.io/data.json')
         .then((res) => res.json())
         .then((res) => {
             try {
