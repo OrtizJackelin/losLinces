@@ -46,7 +46,18 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#btn_submit_form_evento").addEventListener("click",generarPreinscripcion);
     document.querySelector("#btn_imprimir_preinscripcion").addEventListener("click",imprimirPreinscripcion);
     document.querySelector("#btn_descargar_preinscripcion").addEventListener("click",descargarPreinscripcion);
+    document.querySelector("#btn_descargar_cerrar").addEventListener("click",cerrarModal);
 });
+
+function cerrarModal(){
+    var formulario= document.querySelector("#formulario");
+    formulario.submit();
+
+    setTimeout(function() {
+        formulario.reset();
+  }, 2000);
+
+ }
 
 //Preinscripciones
 function generarPreinscripcion(event){
@@ -73,7 +84,7 @@ function generarPreinscripcion(event){
         })
 
         myModal2.show();
-        formulario.submit();
+       
 
     }else{
 

@@ -73,6 +73,11 @@ function buscarEventoPorId(colleccion, id) {
 function cerrarModal(){
    var formulario= document.querySelector("#formulario");
    formulario.submit();
+
+   setTimeout(function() {
+        formulario.reset();
+  }, 2000);
+   
 }
 function completarFormulario(evento){
     if(evento!=null){

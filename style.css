@@ -2,9 +2,8 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-} 
+
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -35,13 +34,13 @@ p {
 }
 
 /* WHATSAPP FLOTANTE */
-.btn-wsp{
+.btn-wsp {
     width: 100%;
     height: 8%;
     bottom: 30px;
     padding-right: 30px;
     position: fixed;
-    text-align:end;
+    text-align: end;
     justify-content: end;
 }
 
@@ -60,9 +59,12 @@ button a {
     color: white;
     font-size: 100;
 }
+button a:hover{
+    color: white;
+}
 
 /* NAVBAR*/
-header {
+/* header {
     width: 100%;
     height: 50vh;
     background-image: url(imagenesIndex/FondoPrueba10.jpg);
@@ -151,7 +153,7 @@ nav {
 
 .cerrar {
     display: none;
-}
+} */
 
 
 /* REDES */
@@ -161,10 +163,14 @@ nav {
 }
 
 /* IMAGEN Y SLOGAN */
-.imgFondo {
-    margin-bottom: 5%;
+.imgPrincipal {
+    background-image: url("imagenesIndex/FondoMobile5.png");
+    background-size: cover;
+    background-position: center;
+    height: 650px;
     width: 100%;
 }
+
 
 /* ESCUELAS */
 .tituloEscuelas {
@@ -190,7 +196,7 @@ nav {
     background-size: cover; */
     background-color: whitesmoke;
     color: black;
-    
+
     border-radius: 3.5px;
 }
 
@@ -215,7 +221,7 @@ nav {
     align-items: center;
     justify-content: center;
     height: 100%;
-    /* z-index: 2; */
+    z-index: 2;
     background-color: rgb(233, 232, 232);
     /* background: linear-gradient(to left, rgb(248, 235, 235), rgb(146, 141, 141),rgb(124, 122, 122));
     background-size: 400% 400%;
@@ -228,17 +234,19 @@ nav {
 }
 
 .proximosEventos {
-    background-image: linear-gradient(rgb(165, 4, 4), rgb(110, 9, 9), rgb(32, 1, 1));
+    background-image: linear-gradient(rgb(179, 3, 3), rgb(119, 8, 8), rgb(68, 1, 1));
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 60px;
+    text-align: center;
     margin-bottom: 0;
     padding: 12px 150px;
     animation: agrandar 2s linear;
+    z-index: 2;
     animation-iteration-count: 5;
 }
 
@@ -284,7 +292,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 500px;
+    height: 700px;
     width: auto;
     padding-bottom: 100px;
 
@@ -292,13 +300,16 @@ nav {
 
 .diasYHorarios {
     margin: 5%;
-    padding-top: 10%;
+    padding-top: 100px;
 
 }
 
 .ubicacion {
-    padding: 5%;
+    width: 200px;
+    height: 500px;
+    padding-bottom: 200px;
     margin-bottom: 20px;
+    margin-top: 100px;
 }
 
 .redesContacto {
@@ -323,11 +334,11 @@ nav {
 /* FOOTER */
 .footer {
     background-color: gray;
-    height: 70px;
-    padding: 12px;
+    height: 100px;
+    padding: 6px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content:center;
 }
 
 .footer p {
@@ -335,16 +346,21 @@ nav {
     padding: 2%;
     color: antiquewhite;
 }
+.footer a{
+    width: 10px;
+    height: 10px;
+
+}
 
 .redesFooter {
-    padding: 12px 12px;
+    padding: 6px 6px;
 }
 
 /* ADAPTACION PARA PANTALLAS */
 @media screen and (width>720px) {
 
     /* NUEVO */
-    header {
+    /* header {
         width: 100%;
         height: 100vh;
     }
@@ -381,9 +397,16 @@ nav {
     .navMenu li a {
         font-size: 15px;
         font-weight: 300;
-    }
-
-
+    } */
+/* IMAGEN PRINCIPAL */
+.imgPrincipal {
+    background-image: url("imagenesIndex/FondoPrueba13.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 630px;
+    width: 100%;
+}
     /* ESCUELAS */
     .seccionEscuelas {
         display: flex;
@@ -421,11 +444,10 @@ nav {
     /* ENCONTRANOS */
     .puntoEncuentro {
         max-width: 1400px;
-        height: 100vh;
         margin: auto;
         display: flex;
         flex-direction: row;
-        align-content: space-between;
+        align-content: center;
         justify-content: center;
         height: 400px;
 
@@ -441,7 +463,15 @@ nav {
     }
 
     .ubicacion {
-        padding: 30px 30px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: 500px;
+            padding-bottom: 300px;
+            margin-bottom: 200px;
+            margin-top: 10px;
+    
     }
 
     /* NOSOTROS */
@@ -475,7 +505,7 @@ nav {
     }
 
     .footer p {
-        margin: 5px;
+        margin: 2px;
         padding: 8px;
     }
 
