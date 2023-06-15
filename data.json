@@ -42,7 +42,7 @@
     "ubicacion": "Alfonsin y Laprida, Vicente Lopez",
     "date": "17/06/2023",
     "hour": "17:00",
-    "distancias":[{ "distancia":10,"costo":4500},{"distancia":3, "costo":6500}],
+    "distancias":[{ "distancia":10,"costo":4500},{"distancia":3, "costo":4500}],
     "url": "./Imagenes eventos Carreras/Rexona.jpg",
     "inscripcion_habilitada": true,
     "evento_finalizado" : false
