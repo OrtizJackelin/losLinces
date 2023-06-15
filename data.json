@@ -55,7 +55,7 @@
     "date": "02/07/2023",
     "hour": "7:45 a 8:30",
     "distancias":[{ "distancia":30,"costo":6999}],
-    "url": "./Imagenes eventos Carreras/30kBuenosAires.jpg",
+    "url": "./Imagenes eventos Carreras/30KBuenosAires.jpg",
     "inscripcion_habilitada": true,
     "evento_finalizado" : false
   },
@@ -91,7 +91,7 @@
     "date": "06/08/2023",
     "hour": "7:15 a 8:00",
     "distancias": [{ "distancia":15, "costo":5799}],
-    "url": "./Imagenes eventos Carreras/15kBuenosAires.jpg",
+    "url": "./Imagenes eventos Carreras/15KBuenosAires.jpg",
     "inscripcion_habilitada": true,
     "evento_finalizado" : false
   },
@@ -127,7 +127,7 @@
     "date": "24/09/2023",
     "hour": "7:00",
     "distancias": [{ "distancia":42,"costo":9700}],
-    "url": "./Imagenes eventos Carreras/MaratonBuenosAires.jpg",
+    "url": "./Imagenes eventos Carreras/MaratonBuenosaires.jpg",
     "inscripcion_habilitada": true,
     "evento_finalizado" : false
   },
