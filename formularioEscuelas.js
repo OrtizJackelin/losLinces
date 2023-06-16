@@ -23,14 +23,35 @@ document.addEventListener("DOMContentLoaded", () => {
         redireccionar("No se especificó ninguna escuela.");
     } 
     if(idEscuela==='1'){
+
         let titulo=document.getElementById("titulo");
         titulo.innerHTML="Incripci&oacute;n Escuela De Ni&ntilde;os";
+
+        var edad=document.getElementById("inputEdad");
+       
+        edad.min=3; 
+        edad.max=11;
+ 
     }else if(idEscuela==='2'){
+
         let titulo=document.getElementById("titulo");
         titulo.innerHTML="Incripci&oacute;n Escuela De Jovenes";
+        
+        var edad=document.getElementById("inputEdad");
+       
+        edad.min=14; 
+        edad.max=20;
+
     }else if(idEscuela==='3'){
+
         let titulo=document.getElementById("titulo");
         titulo.innerHTML="Incripci&oacute;n Escuela De Adultos";
+
+        var edad=document.getElementById("inputEdad");
+       
+        edad.min=21; 
+        edad.max=100;
+        
     }else{
         redireccionar("Escuela no valida.");
     }
