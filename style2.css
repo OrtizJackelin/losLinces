@@ -1,51 +1,21 @@
 * {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
+    padding: 0px;
+    margin: 0px;
 }
 
-/* html{
-    scroll-behavior: smooth;
-} */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
-
 }
 
-/* TITULOS */
-h1 {
-    color: rgb(175, 22, 22);
-    font-weight: bold;
-}
-
-btn{
-    background: linear-gradient(rgb(165, 4, 4), rgb(97, 7, 7), rgb(54, 2, 2));
-}
-
-/* NAVBAR */
-.navbar-nav a {
-    color: white;
-}
-
-.navbar-brand img {
-    padding: 12px;
-}
-
-/* BOTON EVENTOS */
-.card-body btn {
-    background: linear-gradient(rgb(165, 4, 4), rgb(97, 7, 7), rgb(54, 2, 2));
-}
-
-/* BOOTSTRAP */
+/* NAV */
 .nav-link {
-
     margin-right: 40px;
     margin-bottom: 10px;
 
 }
-
 .navbar-toggler-icon {
     color: white;
-    /* Cambia #ff0000 por el color que desees utilizar */
 }
 
 #botonFiltro,
@@ -54,53 +24,16 @@ btn{
     background: linear-gradient(rgb(165, 4, 4), rgb(78, 6, 6), rgb(32, 1, 1));
 }
 
-.navbar-toggler-icon::before {
-    color: white;
-    /* Cambia el color del icono aquí */
+/* EVENTOS */
+#eventos h1, 
+#inscripcionNiños h1{
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 50px;
 }
 
-/* COLOR DE ACENTO */
-.colorDistinto {
-    color: rgb(175, 22, 22);
-    font-weight: bold;
+.card-img-top{
+    padding: 5%;
+    height: 50%;
 }
 
-/* FOOTER */
-.footer {
-    background-color: gray;
-    height: 70px;
-    padding: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.footer p {
-    margin: 0;
-    padding: 2%;
-    color: antiquewhite;
-}
-
-.redesFooter {
-    padding: 12px 12px;
-}
-
-/* ADAPTACION PARA PANTALLAS */
-@media screen and (width>720px) {
-
-    /* FOOTER */
-    .footer {
-        height: 150px;
-        padding: 40px;
-        display: flex;
-        flex-direction: row;
-        align-content: space-between;
-    }
-
-    .footer p {
-        margin: 5px;
-        padding: 8px;
-    }
-
-
-}

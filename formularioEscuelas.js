@@ -3,11 +3,11 @@ const redireccionar = (msg) => {
     location.replace("index.html");
 }
 
-function getIdFromQueryString(){        
+function getIdFromQueryString() {
     const querystring = window.location.search
     console.log(querystring)
     const params = new URLSearchParams(querystring)
-    if (params.has("id")){
+    if (params.has("id")) {
         return params.get('id')
     }
     return 0;
@@ -21,83 +21,83 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!idEscuela) {
         redireccionar("No se especificó ninguna escuela.");
-    } 
-    if(idEscuela==='1'){
+    }
+    if (idEscuela === '1') {
 
-        let titulo=document.getElementById("titulo");
-        titulo.innerHTML="Incripci&oacute;n Escuela De Ni&ntilde;os";
+        let titulo = document.getElementById("titulo");
+        titulo.innerHTML = "Incripci&oacute;n Escuela De Ni&ntilde;os";
 
-        var edad=document.getElementById("inputEdad");
-       
-        edad.min=3; 
-        edad.max=11;
- 
-    }else if(idEscuela==='2'){
+        var edad = document.getElementById("inputEdad");
 
-        let titulo=document.getElementById("titulo");
-        titulo.innerHTML="Incripci&oacute;n Escuela De Jovenes";
-        
-        var edad=document.getElementById("inputEdad");
-       
-        edad.min=14; 
-        edad.max=20;
+        edad.min = 3;
+        edad.max = 11;
 
-    }else if(idEscuela==='3'){
+    } else if (idEscuela === '2') {
 
-        let titulo=document.getElementById("titulo");
-        titulo.innerHTML="Incripci&oacute;n Escuela De Adultos";
+        let titulo = document.getElementById("titulo");
+        titulo.innerHTML = "Incripci&oacute;n Escuela De Jovenes";
 
-        var edad=document.getElementById("inputEdad");
-       
-        edad.min=21; 
-        edad.max=100;
-        
-    }else{
+        var edad = document.getElementById("inputEdad");
+
+        edad.min = 14;
+        edad.max = 20;
+
+    } else if (idEscuela === '3') {
+
+        let titulo = document.getElementById("titulo");
+        titulo.innerHTML = "Incripci&oacute;n Escuela De Adultos";
+
+        var edad = document.getElementById("inputEdad");
+
+        edad.min = 21;
+        edad.max = 100;
+
+    } else {
         redireccionar("Escuela no valida.");
     }
 
     const inputs = document.querySelectorAll("input");
     inputs.forEach(
-        function(myinput){
-            myinput.addEventListener("blur",validarInputs);
+        function (myinput) {
+            myinput.addEventListener("blur", validarInputs);
         }
     );
 
     //Botones
-    document.querySelector("#btn_submit_form_evento").addEventListener("click",generarPreinscripcion);
-    document.querySelector("#btn_imprimir_preinscripcion").addEventListener("click",imprimirPreinscripcion);
-    document.querySelector("#btn_descargar_preinscripcion").addEventListener("click",descargarPreinscripcion);
-    document.querySelector("#btn_descargar_cerrar").addEventListener("click",cerrarModal);
+    document.querySelector("#btn_submit_form_evento").addEventListener("click", generarPreinscripcion);
+    document.querySelector("#btn_imprimir_preinscripcion").addEventListener("click", imprimirPreinscripcion);
+    document.querySelector("#btn_descargar_preinscripcion").addEventListener("click", descargarPreinscripcion);
+    document.querySelector("#btn_descargar_cerrar").addEventListener("click", cerrarModal);
 });
 
-function cerrarModal(){
-    var formulario= document.querySelector("#formulario");
+function cerrarModal() {
+    var formulario = document.querySelector("#formulario");
     formulario.submit();
-
-    setTimeout(function() {
+ 
+    setTimeout(function () {
         formulario.reset();
-  }, 2000);
+    }, 2000);
 
- }
+}
 
 //Preinscripciones
-function generarPreinscripcion(event){
+function generarPreinscripcion(event) {
 
-    var formulario= document.querySelector("#formulario")
-    
-    if (formulario.checkValidity()){
+    var formulario = document.querySelector("#formulario")
 
-        document.querySelector("#pi_titulo").textContent=document.querySelector("#titulo").innerHTML;
-        document.querySelector("#pi_inputName").textContent = "Integrante: " + document.querySelector("#inputName").value 
-        + " " + document.querySelector("#inputApellido").value;
+    if (formulario.checkValidity()) {
+
+        document.querySelector("#pi_titulo").textContent = document.querySelector("#titulo").innerHTML;
+        document.querySelector("#pi_inputName").textContent = "Integrante: " + document.querySelector("#inputName").value
+            + " " + document.querySelector("#inputApellido").value;
 
         document.querySelector("#pi_inputDni").textContent = "DNI: " + document.querySelector("#inputDni").value;
 
-        document.querySelector("#pi_inputNombreContacto").textContent = "Persona: " + document.querySelector("#inputNombreContacto").value 
-        + " " + document.querySelector("#inputApellidoContacto").value;
-        
-        document.querySelector("#pi_inputTelefonoContacto").textContent = "Teléfono: " + document.querySelector("#inputTelefonoContacto").value; 
-     
+        document.querySelector("#pi_inputNombreContacto").textContent = "Persona: " + document.querySelector("#inputNombreContacto").value
+            + " " + document.querySelector("#inputApellidoContacto").value;
+
+        document.querySelector("#pi_inputTelefonoContacto").textContent = "Teléfono: " + document.querySelector("#inputTelefonoContacto").value;
+
 
 
         const myModal2 = new bootstrap.Modal('#preinscripcion_modal', {
@@ -105,9 +105,9 @@ function generarPreinscripcion(event){
         })
 
         myModal2.show();
-       
 
-    }else{
+
+    } else {
 
         formulario.reportValidity();
     }
@@ -118,30 +118,30 @@ function imprimirPreinscripcion() {
     var contenidoDiv = document.getElementById("pre_inscripcion_imprimible").innerHTML;
     var ventanaImpresion = window.open('', '_blank', 'width=500,height=500');
 
-    ventanaImpresion.document.write('<html><head><title>Imprimir Preinscripción</title></head><body>' 
-    + contenidoDiv + '</body></html>');
+    ventanaImpresion.document.write('<html><head><title>Imprimir Preinscripción</title></head><body>'
+        + contenidoDiv + '</body></html>');
 
     ventanaImpresion.document.close();
     ventanaImpresion.print();
 }
 
-function descargarPreinscripcion(){
+function descargarPreinscripcion() {
 
     var doc = new jsPDF();
     var elementHTML = document.querySelector("#pre_inscripcion_imprimible");
-    doc.fromHTML(elementHTML, 15, 15, {'width': 170});
+    doc.fromHTML(elementHTML, 15, 15, { 'width': 170 });
     doc.save('Constancia-Preinscripcion.pdf');
 }
 
 
-function validarInputs(event){
+function validarInputs(event) {
 
-    if(event.target.checkValidity()){
-        
-        event.target.style.borderColor="#ced4da";
-    }else{
-      
-        event.target.style.borderColor="crimson";
+    if (event.target.checkValidity()) {
+
+        event.target.style.borderColor = "#ced4da";
+    } else {
+
+        event.target.style.borderColor = "crimson";
     }
-    
+
 }

@@ -1,5 +1,4 @@
-const cards = document.querySelector("#card-dinamica");
-const templateCard = document.querySelector("#template-card").content;
+
 var listaEventos;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -8,17 +7,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("#inputFiltroDistancia").addEventListener("change", aplicarFiltros);
     document.querySelector("#inputFiltroCiudad").addEventListener("change", aplicarFiltros);
-    document.querySelector("#botonFiltro").addEventListener("click", function(){
+    document.querySelector("#botonFiltro").addEventListener("click", function () {
 
-        const estadoBoton=document.querySelector("#botonFiltro");
+        const estadoBoton = document.querySelector("#botonFiltro");
 
-        if(estadoBoton.innerText==='Mostar Filtros'){
+        if (estadoBoton.innerText === 'Mostar Filtros') {
 
-            estadoBoton.innerText="Ocultar Filtros"
+            estadoBoton.innerText = "Ocultar Filtros"
         }
-        else{
+        else {
 
-            estadoBoton.innerText="Mostar Filtros"
+            estadoBoton.innerText = "Mostar Filtros"
         }
 
     });
@@ -54,7 +53,9 @@ const mostrarSpinner = (estado) => {
 };
 
 const pintarDatos = (data) => {
-
+    
+    const cards = document.querySelector("#card-dinamica");
+    const templateCard = document.querySelector("#template-card").content;
     const fragment = document.createDocumentFragment();
 
     //Para llenar el select del filtro de ciudades distancias
@@ -75,7 +76,7 @@ const pintarDatos = (data) => {
 
             distancia = distancia + item.distancia + "K ";
         });
-        
+
         clone.querySelector("#p_distancia_evento").textContent = "distancia: " + distancia;
 
         clone.querySelector("#img_evento").setAttribute("src", evento.url);
@@ -89,11 +90,11 @@ const pintarDatos = (data) => {
 
             clone.querySelector("#a_inscribirme").setAttribute("aria-disabled", "true");
             clone.querySelector("#a_inscribirme").classList.add("disabled");
-            if(evento.evento_finalizado){
-                clone.querySelector("#mensaje_estado_carrera").textContent="Evento Finalizado";
+            if (evento.evento_finalizado) {
+                clone.querySelector("#mensaje_estado_carrera").textContent = "Evento Finalizado";
             }
-            else{
-                clone.querySelector("#mensaje_estado_carrera").textContent="¡Proximamente!";
+            else {
+                clone.querySelector("#mensaje_estado_carrera").textContent = "¡Proximamente!";
             }
 
         }
@@ -104,7 +105,7 @@ const pintarDatos = (data) => {
         listaCiudades[evento.city] = evento.city;
 
         //Crear lista de distancias para usar luego en el filtro
-        evento.distancias.forEach((item) =>{
+        evento.distancias.forEach((item) => {
             listaDistancias[item.distancia] = item.distancia;
         });
     });
@@ -112,8 +113,8 @@ const pintarDatos = (data) => {
     // agregar  todas la card a la pagina
     cards.appendChild(fragment);
 
-//llenar el select de ciudades para el filtro
-    if (document.querySelector("#inputFiltroCiudad").options.length ==1 ){
+    //llenar el select de ciudades para el filtro
+    if (document.querySelector("#inputFiltroCiudad").options.length == 1) {
         for (var clave in listaCiudades) {
             const option = document.createElement('option')
             option.value = clave;
@@ -123,13 +124,13 @@ const pintarDatos = (data) => {
     }
 
     //llenar el select de distancias para el filtro
-    if (document.querySelector("#inputFiltroDistancia").options.length ==1 ){
+    if (document.querySelector("#inputFiltroDistancia").options.length == 1) {
         for (var clave in listaDistancias) {
             const option = document.createElement('option')
             option.value = clave;
             option.text = clave;
             document.querySelector("#inputFiltroDistancia").appendChild(option);
-        }           
+        }
     }
 }
 
@@ -138,19 +139,19 @@ const aplicarFiltros = () => {
     const ciudadSeleccionada = document.querySelector("#inputFiltroCiudad").value;
     const distanciaSeleccionada = document.querySelector("#inputFiltroDistancia").value;
     var eventosFiltrados;
-    if (ciudadSeleccionada==1) {
+    if (ciudadSeleccionada == 1) {
         eventosFiltrados = listaEventos;
-    }else{
-        var eventosPorCiudad = listaEventos.filter(function(evento) {
+    } else {
+        var eventosPorCiudad = listaEventos.filter(function (evento) {
             return evento.city === ciudadSeleccionada;
         });
         eventosFiltrados = eventosPorCiudad;
     }
-    if (distanciaSeleccionada!=1){
-        var eventosPorDistancia = eventosFiltrados.filter(function(evento) {
+    if (distanciaSeleccionada != 1) {
+        var eventosPorDistancia = eventosFiltrados.filter(function (evento) {
             var iguales = false;
-            evento.distancias.forEach((item) =>{
-                if (item.distancia==distanciaSeleccionada) iguales = true;
+            evento.distancias.forEach((item) => {
+                if (item.distancia == distanciaSeleccionada) iguales = true;
             });
             return iguales;
         });

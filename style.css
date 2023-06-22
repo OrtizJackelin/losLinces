@@ -2,35 +2,14 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
-
 }
 
 /* COLOR PARA TEXTO DIFERENTE */
 .colorDistinto {
     color: rgb(175, 22, 22);
     font-weight: bold;
-}
-
-/* TITULOS */
-h1 {
-    font-size: 3em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-p {
-    font-size: 1em;
 }
 
 /* WHATSAPP FLOTANTE */
@@ -59,109 +38,12 @@ button a {
     color: white;
     font-size: 100;
 }
-button a:hover{
+
+button a:hover {
     color: white;
 }
 
-/* NAVBAR*/
-/* header {
-    width: 100%;
-    height: 50vh;
-    background-image: url(imagenesIndex/FondoPrueba10.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-nav {
-    position: fixed;
-    height: 130px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 5px;
-    padding-left: 30px;
-}
-
-.abajo {
-    background-color: black;
-}
-
-.logo {
-    width: 140px;
-    margin-left: 7px;
-}
-
-.bar-btn {
-    font-size: 25px;
-    color: #fff;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.navMenu {
-    position: fixed;
-    width: 100%;
-    
-    top: 100px;
-    background: rgba(0, 0, 0, .95);
-    text-align: center;
-}
-
-.navMenu li {
-    display: none;
-    line-height: 30px;
-    margin: 50px 0;
-}
-
-.navMenu li a {
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.navMenu a img {
-    margin: 5px;
-}
-
-.navMenu li a:hover {
-    color: rgb(255, 48, 48);
-    transition: .3s;
-}
-
-#check {
-    display: none;
-}
-
-#check:checked~.navMenu {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    height: 250px;
-    padding: 12px;
-}
-
-#check:checked~.navMenu li {
-    display: block;
-    font-size: 12px;
-    line-height: 20px;
-    margin: 10px 0;
-    padding-right: 50px;
-}
-
-.cerrar {
-    display: none;
-} */
-
-
-/* REDES */
-.redes {
-    padding: 12px;
-    font-stretch: expanded;
-}
-
+/* VERSION MOBILE */
 /* IMAGEN Y SLOGAN */
 .imgPrincipal {
     background-image: url("imagenesIndex/FondoMobile5.png");
@@ -171,13 +53,12 @@ nav {
     width: 100%;
 }
 
-
 /* ESCUELAS */
-.tituloEscuelas {
+#escuelas h1 {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px;
 
 }
 
@@ -191,12 +72,8 @@ nav {
     justify-content: center;
     height: 450px;
     width: auto;
-    /* background-image: linear-gradient(0deg ,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(imagenesIndex/FondoEscuelas2.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
     background-color: whitesmoke;
     color: black;
-
     border-radius: 3.5px;
 }
 
@@ -205,35 +82,34 @@ nav {
     color: rgb(175, 22, 22);
 }
 
+.escuelas h6 {
+    padding: 15px;
+    font-weight: bold;
+}
+
 .escuelas p {
     font-size: 15px;
     font-weight: 6rem;
 
 }
 
-
 /* EVENTOS */
 .seccionEventos {
     color: black;
     display: flex;
-    padding: 10px 10px;
+    padding: 30px;
+    margin: 10% 0%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    z-index: 2;
     background-color: rgb(233, 232, 232);
-    /* background: linear-gradient(to left, rgb(248, 235, 235), rgb(146, 141, 141),rgb(124, 122, 122));
-    background-size: 400% 400%;
-    animation: seccionEventos 20s infinite ease-in-out;  */
 }
 
 .seccionEventos p {
-    width: 50%;
     text-align: center;
 }
 
-.proximosEventos {
+.seccionEventos h1 {
     background-image: linear-gradient(rgb(179, 3, 3), rgb(119, 8, 8), rgb(68, 1, 1));
     background-clip: text;
     -webkit-background-clip: text;
@@ -243,11 +119,8 @@ nav {
     font-weight: bold;
     font-size: 60px;
     text-align: center;
-    margin-bottom: 0;
-    padding: 12px 150px;
     animation: agrandar 2s linear;
-    z-index: 2;
-    animation-iteration-count: 5;
+    animation-iteration-count: 2;
 }
 
 @keyframes agrandar {
@@ -274,42 +147,31 @@ nav {
 
 }
 
-
-/* @keyframes seccionEventos {
-    0% {
-        background-position: 0 100%;
-    }
-
-    100% {
-        background-position: 100% 0;
-    }
-} */
+/* NOSOTROS */
+.seccionNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 25px;
+}
 
 /* ENCONTRANOS */
 .puntoEncuentro {
-    max-width: 720px;
-    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 700px;
-    width: auto;
-    padding-bottom: 100px;
-
+    height: 600px;
+    margin: 20px;
 }
 
-.diasYHorarios {
-    margin: 5%;
-    padding-top: 100px;
-
+.diasYHorarios .ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ubicacion {
-    width: 200px;
-    height: 500px;
-    padding-bottom: 200px;
-    margin-bottom: 20px;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .redesContacto {
@@ -320,100 +182,48 @@ nav {
     margin: 5px;
 }
 
-
-/* NOSOTROS */
-.seccionNosotros {
-    max-width: 1400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 12px;
-}
-
 /* FOOTER */
-.footer {
+footer {
     background-color: gray;
-    height: 100px;
     padding: 6px;
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: space-around;
 }
 
-.footer p {
-    margin: 0;
+footer p {
     padding: 2%;
     color: antiquewhite;
 }
-.footer a{
+
+footer a {
     width: 10px;
     height: 10px;
-
 }
 
 .redesFooter {
     padding: 6px 6px;
 }
 
-/* ADAPTACION PARA PANTALLAS */
-@media screen and (width>720px) {
+/* VERSION DE ESCRITORIO */
+@media screen and (min-width:720px) {
 
-    /* NUEVO */
-    /* header {
+    /* IMAGEN PRINCIPAL */
+    .imgPrincipal {
+        background-image: url("imagenesIndex/FondoPrueba13.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 630px;
         width: 100%;
-        height: 100vh;
     }
 
-    nav {
-        height: 130px;
-        position: fixed;
-        padding-left: 25px;
-        padding-bottom: 10px;
-        padding-top: 15px;
-    }
-
-    .bar-btn {
-        display: none;
-    }
-
-    .navMenu {
-        position: relative;
-        height: 100px;
-        top: 0;
-        background: none;
-        transition: none;
-        text-align: right;
-        margin-right: 50px;
-    }
-
-    .navMenu li {
-        display: inline-block;
-        line-height: 100px;
-        margin: 0 20px;
-        transition: none;
-    }
-
-    .navMenu li a {
-        font-size: 15px;
-        font-weight: 300;
-    } */
-/* IMAGEN PRINCIPAL */
-.imgPrincipal {
-    background-image: url("imagenesIndex/FondoPrueba13.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    height: 630px;
-    width: 100%;
-}
     /* ESCUELAS */
     .seccionEscuelas {
         display: flex;
         justify-content: center;
         margin-top: 30px;
     }
-
     .escuelas {
         display: flex;
         flex-direction: column;
@@ -422,12 +232,9 @@ nav {
         height: 450px;
         margin: 10px;
     }
-
-    #tituloEscuelas {
-        font-size: 3.5em;
-        margin-top: 30px;
+    #escuelas h1 {
+        margin-top: 40px;
     }
-
     .escuelas:hover {
         height: 480px;
         width: 350px;
@@ -438,49 +245,19 @@ nav {
     .seccionEventos {
         height: 70vh;
         margin-top: 5%;
+        margin: 5% 0%;
     }
-
-
-    /* ENCONTRANOS */
-    .puntoEncuentro {
-        max-width: 1400px;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-        height: 400px;
-
-    }
-
-    .diasYHorarios {
+    .seccionEventos p{
         width: 50%;
-        text-align: initial;
-        padding: 30px 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .ubicacion {
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 50%;
-            height: 500px;
-            padding-bottom: 300px;
-            margin-bottom: 200px;
-            margin-top: 10px;
-    
     }
 
     /* NOSOTROS */
     .seccionNosotros {
+        margin: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
-
     .imgNosotros {
         background-image: url("imagenesIndex/jovenes.jpg");
         background-size: cover;
@@ -488,25 +265,44 @@ nav {
         height: 550px;
         width: 400px;
     }
-
     .textoNosotros {
         width: 50%;
-        margin-left: 10%;
         text-align: left;
     }
 
-    /* FOOTER */
-    .footer {
-        height: 150px;
-        padding: 40px;
+    /* ENCONTRANOS */
+    .puntoEncuentro {
         display: flex;
         flex-direction: row;
-        align-content: space-between;
+        align-content: center;
+        justify-content: center;
+        height: 400px;
+    }
+    .diasYHorarios {
+        width: 50%;
+        padding: 30px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .ubicacion {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 80px;
     }
 
-    .footer p {
+    /* FOOTER */
+    footer {
+        height: 100px;
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    footer p {
         margin: 2px;
         padding: 8px;
     }
-
 }
+

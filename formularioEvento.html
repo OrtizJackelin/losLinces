@@ -4,10 +4,8 @@
 <head>
     <title>Agrupación Los Linces</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="style2.css" type="text/css">
-    <!--TIPOGRAFIA-->
-    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -40,19 +38,21 @@
                                 style="color: white;">NOSOTROS</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#encontranos"
                                 style="color: white;">CONTACTO</a></li>
-                        <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=1126939176" target="_blank"><img
-                                    src="redes/whatsapp.svg" alt="whatsapp" style="margin-right: 10px;"></a>
-                            <a href="https://www.instagram.com/loslincesatletismo/" target="_blank"><img src="redes/instagram.svg"
-                                    alt="instagram" style="margin-right: 10px;"></a>
-                            <a href="https://www.facebook.com/LOSLINCESRUNNINGTEAM" target="_blank"><img src="redes/facebook.svg"
-                                    alt="facebook" style="margin-right: 60px;"></a>
+                        <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=123456789"
+                                target="_blank"><img src="redes/whatsapp.svg" alt="whatsapp"
+                                    style="margin-right: 10px;"></a>
+                            <a href="https://www.instagram.com/loslincesatletismo/" target="_blank"><img
+                                    src="redes/instagram.svg" alt="instagram" style="margin-right: 10px;"></a>
+                            <a href="https://www.facebook.com/LOSLINCESRUNNINGTEAM" target="_blank"><img
+                                    src="redes/facebook.svg" alt="facebook" style="margin-right: 60px;"></a>
                         </li>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section> <!--FORM-->
+    <!--FORMULARIO-->
+    <section>
 
         <div class="container w-75 ">
 
@@ -76,7 +76,7 @@
 
                 <div class="col-md-4">
                     <label for="inputDni" class="form-label">DNI</label>
-                    <input type="number" class="form-control" id="inputDni" min="1000" max="99999999" required>
+                    <input type="number" class="form-control" id="inputDni" min="1000000" max="99999999" required>
                 </div>
 
                 <div class="col-md-3">
@@ -141,7 +141,7 @@
 
         </div>
     </section>
-    <!---Ventana Bootstrap Modal-->
+    <!---VENTANA MODAL-->
     <section id="preinscripcion">
         <div class="modal fade" id="preinscripcion_modal" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -168,16 +168,16 @@
                                         <i class="bi bi-whatsapp "></iclass></i></a>
                                 </li>
                             </ul>
-                            <p> <b>Importante:</b>En descripci&oacute;n de la transferencia colocar s&oacute;lo el n&uacute;mero de
+                            <p> <b>Importante:</b>En descripci&oacute;n de la transferencia colocar s&oacute;lo el
+                                n&uacute;mero de
                                 preinscripci&oacute;n: <i id="pi_numero2"></i></p>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" 
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
                             id="btn_descargar_cerrar">CERRAR</button>
 
-                        <button type="button" class="btn btn-primary" 
-                            id="btn_imprimir_preinscripcion">IMPRIMIR</button>
+                        <button type="button" class="btn btn-primary" id="btn_imprimir_preinscripcion">IMPRIMIR</button>
 
                         <button type="button" class="btn btn-primary"
                             id="btn_descargar_preinscripcion">DESCARGAR</button>
@@ -188,15 +188,20 @@
     </section>
 
     <!--FOOTER-->
-    <footer class="footer">
+    <footer>
         <p>&copy; Los Linces 2023</p>
         <!--REDES Y WHATSAPP-->
         <div class="redesFooter">
-            <a href="https://api.whatsapp.com/send?phone=1126939176" target="_blank"><img src="redes/whatsapp.svg" alt="whatsapp"></a>
-            <a href="https://www.instagram.com/loslincesatletismo/" target="_blank"><img src="redes/instagram.svg" alt="instagram"></a>
-            <a href="https://www.facebook.com/LOSLINCESRUNNINGTEAM" target="_blank"><img src="redes/facebook.svg" alt="facebook"></a>
+            <a href="https://api.whatsapp.com/send?phone=123456789" target="_blank"><img src="redes/whatsapp.svg"
+                    alt="whatsapp"></a>
+            <a href="https://www.instagram.com/loslincesatletismo/" target="_blank"><img src="redes/instagram.svg"
+                    alt="instagram"></a>
+            <a href="https://www.facebook.com/LOSLINCESRUNNINGTEAM" target="_blank"><img src="redes/facebook.svg"
+                    alt="facebook"></a>
         </div>
     </footer>
+
+    <!-- SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
