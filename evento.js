@@ -1,4 +1,5 @@
-
+const cards = document.querySelector("#card-dinamica");
+const templateCard = document.querySelector("#template-card").content;
 var listaEventos;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -53,8 +54,7 @@ const mostrarSpinner = (estado) => {
 };
 
 const pintarDatos = (data) => {
-    const cards = document.querySelector("#card-dinamica");
-    const templateCard = document.querySelector("#template-card").content;
+
     const fragment = document.createDocumentFragment();
 
     //Para llenar el select del filtro de ciudades distancias
