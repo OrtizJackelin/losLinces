@@ -204,7 +204,17 @@ footer a {
 .redesFooter {
     padding: 6px 6px;
 }
-
+/*PARA MAXIMO 1000PX*/
+@media screen and (max-width:1000px){
+    .seccionNosotros{
+        margin:15px;
+        display:flex;
+        flex-direction:column!important;
+    }
+    .imgNosotros{
+        display:none;
+    }
+}
 
 /* VERSION DE ESCRITORIO */
 @media screen and (min-width:720px) {
@@ -245,7 +255,6 @@ footer a {
 
     /* EVENTOS */
     .seccionEventos {
-        height: 70vh;
         margin-top: 5%;
         margin: 5% 0%;
     }
@@ -265,10 +274,12 @@ footer a {
         background-size: cover;
         background-position: center center;
         height: 550px;
-        width: 400px;
+        flex:5;
+        min-width: 400px;
     }
     .textoNosotros {
-        width: 50%;
+        padding:10px;
+        flex:7;
         text-align: left;
     }
 
