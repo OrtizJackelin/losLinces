@@ -205,8 +205,17 @@ footer a {
     padding: 6px 6px;
 }
 
+/*VERSION CELULAR DE COSTADO*/
+
+
+
+
+
+
+
+
 /* VERSION DE ESCRITORIO */
-@media screen and (min-width: 720px) {
+@media screen and (min-width> 720px) {
 
     /* IMAGEN PRINCIPAL */
     .imgPrincipal {
