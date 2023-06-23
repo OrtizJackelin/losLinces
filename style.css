@@ -44,7 +44,6 @@ button a:hover {
 }
 
 /* VERSION MOBILE */
-@media screen and (max-width:720px){
 /* IMAGEN Y SLOGAN */
 .imgPrincipal {
     background-image: url("imagenesIndex/FondoMobile5.png");
@@ -205,7 +204,7 @@ footer a {
 .redesFooter {
     padding: 6px 6px;
 }
-}
+
 
 /* VERSION DE ESCRITORIO */
 @media screen and (min-width:720px) {
