@@ -206,7 +206,7 @@ footer a {
 }
 
 /* VERSION DE ESCRITORIO */
-@media screen and (min-width: >720px) {
+@media screen and (min-width: 720px) {
 
     /* IMAGEN PRINCIPAL */
     .imgPrincipal {
