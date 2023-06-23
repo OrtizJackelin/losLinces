@@ -222,6 +222,7 @@ footer a {
     /* ESCUELAS */
     .seccionEscuelas {
         display: flex;
+        flex-wrap:wrap;
         justify-content: center;
         margin-top: 30px;
     }
@@ -230,6 +231,7 @@ footer a {
         flex-direction: column;
         align-items: center;
         width: 300px;
+        transition: all .8s ease-in-out;
         height: 450px;
         margin: 10px;
     }
@@ -237,8 +239,7 @@ footer a {
         margin-top: 40px;
     }
     .escuelas:hover {
-        height: 480px;
-        width: 350px;
+        transform:scale(1.05,1.02);
         box-shadow: 0 0 10px 0;
     }
 
