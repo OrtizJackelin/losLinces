@@ -69,7 +69,7 @@ const pintarDatos = (data) => {
         clone.querySelector("#p_nombre_evento").textContent = "Carrera: " + evento.name.substring(0, 35);
         clone.querySelector("#p_ciudad_evento").textContent = "Ciudad: " + evento.city;
         clone.querySelector("#p_fecha_evento").textContent = "Fecha: " + evento.date + " " + " " + "Hora: " + evento.hour;
-        clone.querySelector("#p_largada_evento").textContent = "Largada: " + evento.ubicacion.substring(0, 40);
+        clone.querySelector("#p_largada_evento").textContent = "Largada: " + evento.ubicacion.substring(0, 35);
 
         evento.distancias.forEach((item) => {
 
