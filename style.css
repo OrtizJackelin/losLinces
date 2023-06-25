@@ -216,6 +216,12 @@ footer a {
     }
 }
 
+/* EVENTOS*/
+#card-dinamica{
+    display: flex;
+    flex-direction: column;  
+}
+
 /* VERSION DE ESCRITORIO */
 @media screen and (min-width:720px) {
 
@@ -229,6 +235,14 @@ footer a {
         width: 100%;
     }
 
+    /*EVENTOS*/
+    #card-dinamica{
+        flex-direction: row;  
+    }
+    .card-body{
+        flex: 1;
+    }
+    
     /* ESCUELAS */
     .seccionEscuelas {
         display: flex;
@@ -261,6 +275,7 @@ footer a {
     .seccionEventos p{
         width: 50%;
     }
+
 
     /* NOSOTROS */
     .seccionNosotros {
