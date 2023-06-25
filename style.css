@@ -204,9 +204,20 @@ footer a {
 .redesFooter {
     padding: 6px 6px;
 }
+/*PARA MAXIMO 1000PX*/
+@media screen and (max-width:1000px){
+    .seccionNosotros{
+        margin:15px;
+        display:flex;
+        flex-direction:column!important;
+    }
+    .imgNosotros{
+        display:none;
+    }
+}
 
 /* VERSION DE ESCRITORIO */
-@media screen and (min-width: 720px) {
+@media screen and (min-width:720px) {
 
     /* IMAGEN PRINCIPAL */
     .imgPrincipal {
@@ -221,6 +232,7 @@ footer a {
     /* ESCUELAS */
     .seccionEscuelas {
         display: flex;
+        flex-wrap:wrap;
         justify-content: center;
         margin-top: 30px;
     }
@@ -229,6 +241,7 @@ footer a {
         flex-direction: column;
         align-items: center;
         width: 300px;
+        transition: all .8s ease-in-out;
         height: 450px;
         margin: 10px;
     }
@@ -236,14 +249,12 @@ footer a {
         margin-top: 40px;
     }
     .escuelas:hover {
-        height: 480px;
-        width: 350px;
+        transform:scale(1.05,1.02);
         box-shadow: 0 0 10px 0;
     }
 
     /* EVENTOS */
     .seccionEventos {
-        height: 70vh;
         margin-top: 5%;
         margin: 5% 0%;
     }
@@ -263,10 +274,12 @@ footer a {
         background-size: cover;
         background-position: center center;
         height: 550px;
-        width: 400px;
+        flex:5;
+        min-width: 400px;
     }
     .textoNosotros {
-        width: 50%;
+        padding:10px;
+        flex:7;
         text-align: left;
     }
 
